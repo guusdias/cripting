@@ -4,8 +4,8 @@ from Crypto.Random import get_random_bytes
 import os
 
 class Encryptor:
-    def __init__(self, key):
-        self.key = key
+    def __init__(self):
+        self.key = get_random_bytes(32)
 
     def pad(self, s):
         return s + b"\0" * (AES.block_size - len(s) % AES.block_size)
@@ -24,8 +24,7 @@ class Encryptor:
 
         return plaintext.rstrip(b"\0").decode()
 
-key = get_random_bytes(32)
-enc = Encryptor(key)
+enc = Encryptor()
 
 texto_a_ser_criptografado = input("Digite o texto a ser criptografado: ")
 print("Texto inserido:", texto_a_ser_criptografado)
