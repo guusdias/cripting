@@ -1,5 +1,13 @@
 # Algoritmos de Criptografia
 
+## Equipe
+
+- [x] Cristian Prochnow
+- [x] Gustavo H. Dias
+- [x] Lucas W. de S. Serpa
+- [x] Marlon de Souza
+- [x] Ryan G. M. Bromati
+
 ## Objetivo
 
 O objetivo desta atividade é a implementação de 3 algoritmos mais conhecidos de criptografia, que são:
